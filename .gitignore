@@ -1,0 +1,28 @@
+# target
+/target/
+
+# Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+/.idea/
+*.iml
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/

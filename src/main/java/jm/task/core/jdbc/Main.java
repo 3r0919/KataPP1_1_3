@@ -1,11 +1,12 @@
 package jm.task.core.jdbc;
 
 import jm.task.core.jdbc.dao.*;
+import jm.task.core.jdbc.util.Util;
 
 public class Main {
     public static void main(String[] args) {
 
-        UserDao userDao = new UserDaoJDBCImpl();
+        UserDao userDao = new UserDaoHibernateImpl();
 
         userDao.createUsersTable();
 
@@ -18,5 +19,6 @@ public class Main {
         userDao.getAllUsers();
         userDao.cleanUsersTable();
         userDao.dropUsersTable();
+        Util.shutdown();
     }
 }
